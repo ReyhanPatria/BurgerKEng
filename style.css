@@ -13,6 +13,10 @@ main { /* header sma body sy gabung soalnya bgnya sama */
     height: 85vh;
 }
 
+.yellow {
+    color:#FFA800;
+}
+
 /* header */
 
 header {
@@ -85,7 +89,6 @@ nav img {
 .nav-title span {
     padding: 0;
     display: inline;
-    color:#FFA800;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -127,28 +130,72 @@ nav img {
 .content {
     position: absolute;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     margin: 0 auto;
     width: 100vw;
     height: 65vh;
 }
 
-.burger, .description {
+.burger, .information {
     position: relative;
     width: 50%;
     overflow: visible;
 }
 
-.description {
-    background-color: red;
-    opacity: 0.2;
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25vw;
 }
 
 .burger img {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60%;
+    width: 75%;
+    margin-left: -8vw;
+}
+
+.title {
+    margin-top: 50px;
+}
+
+.title h1 {
+    font-size: 4.5vw;
+    line-height: 4.5vw;
+}
+
+.second {
+    margin-left: 6vw;
+}
+
+.description {
+    white-space: pre-line;
+    font-size: 0.8rem;
+    margin: 5px 0 40px 0;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+}
+
+.btn {
+    background-color: #FFA800;
+    padding: 5px 2.5vw;
+    border-radius: 20px;
+    line-height: 15px;
+}
+
+.btn h1 {
+    color: whitesmoke;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 /* footer */
