@@ -1,7 +1,7 @@
 @media (max-width: 700px) {
 
     main {
-        background-image: url(sprites/home/BG3.png);
+        background-image: url("../../sprites/home/BG3.png");
     }
 
     header {
@@ -27,9 +27,9 @@
         width: 100%;
         background-color: rgba(0, 0, 0, 0);
     }
-    
+
     .menu-icon:hover {
-        background-color: rgba(0, 0, 0, 0);  
+        background-color: rgba(0, 0, 0, 0);
     }
 
     section {
@@ -37,7 +37,7 @@
         min-height: 105vh;
     }
 
-    .board-bg img{
+    .board-bg img {
         display: none;
     }
 
@@ -52,7 +52,8 @@
         margin-top: 5vw;
     }
 
-    .burger, .information {
+    .burger,
+    .information {
         width: 100vw;
     }
 
