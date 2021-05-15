@@ -1,3 +1,127 @@
-@media (max-width: 700px) { /* soalnya minta 700px ~vicktor */
+@media (max-width: 700px) {
 
+    main {
+        background-image: url(sprites/home/BG3.png);
+    }
+
+    header {
+        height: 60vh;
+        width: 100vw;
+        padding-top: 20px;
+    }
+
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 60vh;
+    }
+
+    .menu-icon span {
+        display: none;
+    }
+
+    .menu-icon ul {
+        text-align: center;
+        position: static;
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .menu-icon:hover {
+        background-color: rgba(0, 0, 0, 0);  
+    }
+
+    section {
+        height: 120vw;
+        min-height: 105vh;
+    }
+
+    .board-bg img{
+        display: none;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        margin-top: 5vw;
+    }
+
+    .burger, .information {
+        width: 100vw;
+    }
+
+    .burger {
+        background-image: url(sprites/home/cutting-board.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60vw;
+    }
+
+    .burger img {
+        position: absolute;
+        bottom: 3vw;
+        left: 25%;
+        margin: 0;
+        width: 50%;
+    }
+
+    .information {
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        margin-left: 0;
+        padding: 50px 0 30px 0;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    .title h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .second {
+        margin-left: 0;
+    }
+
+    .description {
+        margin: 5px 0 40px 0;
+    }
+
+    .price {
+        width: auto;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 40vh;
+        padding: 20px 0;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+    }
+
+    .motto {
+        white-space: normal;
+        margin: 5px 0;
+    }
+
+    .social-media {
+        margin-right: 0;
+        width: 120px;
+    }
 }
