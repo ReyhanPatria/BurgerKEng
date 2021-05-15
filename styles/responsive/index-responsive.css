@@ -58,7 +58,7 @@
     }
 
     .burger {
-        background-image: url(sprites/home/cutting-board.png);
+        background-image: url("../../sprites/home/cutting-board.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: right;
