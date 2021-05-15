@@ -16,6 +16,8 @@ body {
     background-image: url("../sprites/home/BG2.png");
     font-family: "Roboto", sans-serif;
     color: #F0D7B8;
+    height: 100vh;
+    position: relative;
 }
 
 nav {
@@ -48,12 +50,12 @@ nav a:hover {
 }
 
 nav img {
-    margin-left: 2rem;
     max-height: 100%;
 }
 
 nav span {
     padding: 0.625rem;
+    margin-right: 2rem;
 }
 
 .menu-icon:hover {
@@ -64,6 +66,10 @@ nav span {
 .menu-icon:hover>ul {
     display: block;
 }
+
+
+/* Main */
+
 
 main {
     text-align: center;
@@ -102,4 +108,47 @@ main {
 
 .orange {
     color: #FFA800;
+}
+
+
+/* Footer */
+
+footer {
+    background: #4C1B1B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    font-style: italic;
+    margin-top: 4rem;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.motto {
+    text-align: center;
+    margin: 0 4rem;
+}
+
+.footer-middle img,
+.footer-right img {
+    width: 2rem;
+    margin: 0.75rem;
+}
+
+.footer-right {
+    flex-direction: column;
+}
+
+.footer-right div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }

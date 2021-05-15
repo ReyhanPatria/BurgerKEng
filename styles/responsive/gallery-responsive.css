@@ -42,6 +42,11 @@
         left: 0;
         width: 25rem;
     }
+
+    footer,
+    .footer-left {
+        flex-direction: column;
+    }
 }
 
 @media all and (max-width: 480px) {
