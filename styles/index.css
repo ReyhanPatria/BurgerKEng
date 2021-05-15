@@ -5,23 +5,23 @@
     padding: 0;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    color:#F0D7B8;   
+    color: #F0D7B8;
 }
 
 .yellow {
-    color:#FFA800;
+    color: #FFA800;
 }
 
 /* header */
 
 main {
-    background-image: url(sprites/home/BG2.png);
+    background-image: url("../sprites/home/BG2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 header {
-    
+
     height: 15vh;
 }
 
@@ -50,8 +50,8 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover{
-    color:#FFA800;
+nav a:hover {
+    color: #FFA800;
 }
 
 nav li {
@@ -73,17 +73,17 @@ nav img {
     position: absolute;
     padding: 5px 30px 5px 5px;
     z-index: 10;
-    background-color: rgba(240, 215, 184, 0.1);   
+    background-color: rgba(240, 215, 184, 0.1);
     display: none;
 }
 
-.menu-icon:hover > ul {
+.menu-icon:hover>ul {
     display: block;
 }
 
 .menu-icon:hover {
     cursor: pointer;
-    background-color: rgba(240, 215, 184, 0.1);  
+    background-color: rgba(240, 215, 184, 0.1);
 }
 
 .nav-logo-title {
@@ -109,7 +109,7 @@ nav img {
     position: relative;
 }
 
-.board-bg img{
+.board-bg img {
     float: right;
     height: 68vh;
     width: 90vw;
@@ -148,7 +148,8 @@ nav img {
     height: 65vh;
 }
 
-.burger, .information {
+.burger,
+.information {
     position: relative;
     width: 50%;
     overflow: visible;
