@@ -1,0 +1,53 @@
+@media (max-width: 700px) {
+
+    main {
+        background-image: url("../../sprites/home/BG3.png");
+    }
+
+    header {
+        height: 60vh;
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 60vh;
+    }
+
+    .menu-icon span {
+        display: none;
+    }
+
+    .menu-icon ul {
+        text-align: center;
+        position: static;
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .menu-icon:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    footer {
+        flex-direction: column;
+        height: 40vh;
+        padding: 20px 0;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+    }
+
+    .motto {
+        white-space: normal;
+        margin: 5px 0;
+    }
+
+    .social-media {
+        margin-right: 0;
+        width: 120px;
+    }
+}

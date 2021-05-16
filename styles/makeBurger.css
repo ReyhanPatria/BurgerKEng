@@ -21,7 +21,6 @@ main {
 }
 
 header {
-
     height: 15vh;
 }
 
@@ -102,112 +101,65 @@ nav img {
 /* body */
 
 section {
-    height: 70vh;
-}
-
-.board-bg {
-    position: relative;
-}
-
-.board-bg img {
-    float: right;
-    height: 68vh;
-    width: 90vw;
-}
-
-.arrows {
-    position: absolute;
-    right: 3vw;
-    top: 38vh;
-}
-
-.arrow {
-    width: 30px;
-    height: 50px;
-    margin: 10px 0;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#up {
-    background-image: url("../sprites/home/Layer\ 5\ copy.png");
-}
-
-#down {
-    background-image: url("../sprites/home/Layer\ 5.png");
-}
-
-.content {
-    position: absolute;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100vw;
-    height: 65vh;
-}
-
-.burger,
-.information {
-    position: relative;
-    width: 50%;
-    overflow: visible;
-}
-
-.information {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 25vw;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.burger img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 75%;
-    margin-left: -8vw;
+section h1 {
+    font-size: 32px;
 }
 
-.title {
-    margin-top: 50px;
+section h3 {
+    font-size: 16px;
 }
 
-.title h1 {
-    font-size: 4.5vw;
-    line-height: 4.5vw;
-}
-
-.second {
-    margin-left: 6vw;
-}
-
-.description {
-    white-space: pre-line;
-    font-size: 0.8rem;
-    margin: 5px 0 40px 0;
-}
-
-.price {
+.makeBurger-form {
     display: flex;
-    justify-content: space-between;
-    width: 25vw;
-}
-
-.btn {
-    background-color: #FFA800;
-    padding: 5px 2.5vw;
+    flex-direction: column;
+    align-items: center;
     border-radius: 20px;
-    line-height: 15px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px 0;
+    width: 100%;
 }
 
-.btn h1 {
-    color: whitesmoke;
+.ingredient-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
-.btn:hover {
-    cursor: pointer;
+.ingredient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.ingredient img {
+    width: 30%;
+    margin: 20px;
+}
+
+#vegetables {
+    flex-direction: row;
+    justify-content: center;
+}
+
+#vegetables img {
+    margin: 0 10vw;
+}
+
+#fish {
+    margin-right: 20px;
 }
 
 /* footer */
