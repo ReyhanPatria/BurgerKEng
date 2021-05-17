@@ -164,21 +164,24 @@ section h3 {
 }
 
 .result {
+    background-image: url("../../sprites/home/cutting-board.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10vw;
+    margin-top: 2vw;
+    height: 20vw;
+    width: 30vw;
 }
 
-
-
 .result img {
-    width: 20%;
+    width: 40%;
 }
 
 .result > .sauce-result {
-    width: 18%;
+    width: 38%;
 }
 
 .topBun-result {
@@ -186,22 +189,22 @@ section h3 {
 }
 
 .veggie-result {
-    margin-top: -8%;
+    margin-top: -18%;
     z-index: 40; 
 }
 
 .sauce-result {
-    margin-top: -6%;
+    margin-top: -14%;
     z-index: 30; 
 }
 
 .meat-result {
-    margin-top: -8%;
+    margin-top: -14%;
     z-index: 20;
 }
 
 .botBun-result {
-    margin-top: -9%;
+    margin-top: -19%;
 }
 
 .hidden {
