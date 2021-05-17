@@ -156,10 +156,56 @@ section h3 {
 
 #vegetables img {
     margin: 0 10vw;
+    width: 25%;
 }
 
 #fish {
     margin-right: 20px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+
+
+.result img {
+    width: 20%;
+}
+
+.result > .sauce-result {
+    width: 18%;
+}
+
+.topBun-result {
+    z-index: 50;
+}
+
+.veggie-result {
+    margin-top: -8%;
+    z-index: 40; 
+}
+
+.sauce-result {
+    margin-top: -6%;
+    z-index: 30; 
+}
+
+.meat-result {
+    margin-top: -8%;
+    z-index: 20;
+}
+
+.botBun-result {
+    margin-top: -9%;
+}
+
+.hidden {
+    display: none;
 }
 
 /* footer */
