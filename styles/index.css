@@ -130,6 +130,10 @@ section {
     background-repeat: no-repeat;
 }
 
+.arrow:hover {
+    cursor: pointer;
+}
+
 #up {
     background-image: url("../sprites/home/Layer\ 5\ copy.png");
 }
