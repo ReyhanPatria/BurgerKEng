@@ -1,0 +1,14 @@
+@media (max-width: 700px) {
+    .member-head img{
+        top: 85%;
+    }
+
+    .member-title{ 
+        margin-top: 40vh;
+    }
+
+    section{
+        height: auto;
+        min-height: none;
+    }
+}
