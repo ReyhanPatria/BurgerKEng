@@ -33,7 +33,7 @@
 
     .burger-container {
         min-width: 30rem;
-        padding: 12rem 2rem 0 2rem;
+        padding: 12rem 2rem 2rem 2rem;
         margin-bottom: 6rem;
         border-radius: 13%;
     }
