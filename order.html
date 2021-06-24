@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    
-        <link rel="stylesheet" href="styles/order.css">
-        <link rel="stylesheet" href="styles/responsive/order-responsive.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/order.css">
+    <link rel="stylesheet" href="styles/responsive/order-responsive.css">
+</head>
+
 <body>
-  
+
     <main>
-    <header>
-        <nav>
-            <div class="menu-icon">
-                <span class="fa fa-bars fa-2x"></span>
-                <ul>
-                    <li>
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">GALLERY</a>
-                    </li>
-                    <li>
-                        <a href="order.html">ORDER</a>
-                    </li>
-                    <li>
-                        <a href="">CREATE</a>
-                    </li>
-                    <li>
-                        <a href="">TEAM</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-logo-title">
-                <div>
-                    <img src="sprites/home/Footer Logo.png" alt="">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <span class="fa fa-bars fa-2x"></span>
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">GALLERY</a>
+                        </li>
+                        <li>
+                            <a href="order.html">ORDER</a>
+                        </li>
+                        <li>
+                            <a href="">CREATE</a>
+                        </li>
+                        <li>
+                            <a href="team.html">TEAM</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="nav-title">
-                    <h2>BURGER</h2>
-                    <h2><span class="yellow">KE</span>NG</h2>
+                <div class="nav-logo-title">
+                    <div>
+                        <img src="sprites/home/Footer Logo.png" alt="">
+                    </div>
+                    <div class="nav-title">
+                        <h2>BURGER</h2>
+                        <h2><span class="yellow">KE</span>NG</h2>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-  
-    
+            </nav>
+        </header>
+
+
         <h1>Order Now</h1>
 
         <section class="container-cart">
@@ -62,40 +64,44 @@
                 <span class="cart-quantity cart-header cart-column">QUANTITY</span>
             </div>
             <div id="cart-body">
-                
+
             </div>
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
                 <span class="cart-total-price">$0</span>
             </div>
         </section>
-       
+
 
         <div class="outer">
 
             <div class="image">
                 <img src="hand.png" alt="">
             </div>
-            
+
             <div class="container">
 
                 <form name="submit_form" action="">
                     <table cellspacing=0>
                         <tr>
                             Name
-                        </tr> 
+                        </tr>
                         <tr>
-                            <span class="error"><p id="name_error"></p></span>
+                            <span class="error">
+                                <p id="name_error"></p>
+                            </span>
                         </tr>
                         <tr>
                             <input type="text" name="name" id="" />
                         </tr>
-                        
+
                         <tr>
                             Email
-                        </tr> 
+                        </tr>
                         <tr>
-                            <span class="error"><p id="email_error"></p></span>
+                            <span class="error">
+                                <p id="email_error"></p>
+                            </span>
                         </tr>
                         <tr>
                             <input type="email" name="email" id="" />
@@ -103,9 +109,11 @@
 
                         <tr>
                             Phone
-                        </tr> 
+                        </tr>
                         <tr>
-                            <span class="error"><p id="phone_error"></p></span>
+                            <span class="error">
+                                <p id="phone_error"></p>
+                            </span>
                         </tr>
                         <tr>
                             <input type="text" name="phone" id="" />
@@ -115,7 +123,9 @@
                             Address
                         </tr>
                         <tr>
-                            <span class="error"><p id="address_error"></p></span>
+                            <span class="error">
+                                <p id="address_error"></p>
+                            </span>
                         </tr>
                         <tr>
                             <input type="text" name="address" id="" />
@@ -125,7 +135,9 @@
                             Serving Type
                         </tr>
                         <tr>
-                            <span class="error"><p id="serve_error"></p></span>
+                            <span class="error">
+                                <p id="serve_error"></p>
+                            </span>
                         </tr>
                         <tr>
                             <td>
@@ -137,23 +149,24 @@
                                 </select>
                             </td>
                             <td>
-                                <button class="btn btn-danger" onclick="order()" type="button" id="orderButton">ORDER</button>
+                                <button class="btn btn-danger" onclick="order()" type="button"
+                                    id="orderButton">ORDER</button>
                             </td>
-                            
+
                         </tr>
 
-                       
+
                     </table>
 
-                    
-                </form>   
-                   
+
+                </form>
+
             </div>
         </div>
-        
+
     </main>
-    
-     <footer>
+
+    <footer>
         <div class="footer-logo">
             <img src="sprites/home/Footer Logo.png" alt="">
             <div class="motto">"the best burger
@@ -182,8 +195,9 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 
 <script src="order.js"></script>
+
 </html>
