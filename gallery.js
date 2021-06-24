@@ -44,8 +44,8 @@ function addToCartClicked(event) {
         alert("Added to cart!")
     }
     else{
-        // checkCart.jumlah++;
-        alert("You can add more in the order page!")
+        checkCart.jumlah++;
+        alert("You have "+ checkCart.jumlah + " items in the cart!")
     }
     localStorage.setItem(CART_STORAGE, JSON.stringify(cart))
 
