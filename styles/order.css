@@ -111,8 +111,9 @@ h1{
 .container-cart {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 1.5em;
+    padding: 5rem 1.5rem;
 }
+
 .section-header {
     font-family: "Roboto";
     font-weight: bolder;
@@ -163,10 +164,45 @@ h1{
     border-radius: 10px;
 }
 
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
 
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
 
 
 /* form */
+
+.error p{
+    font-size: small;
+    color: red;
+}
 
 .image{
     align-self: flex-start;
@@ -190,14 +226,14 @@ h1{
     border-radius: 15%;
     box-shadow: 0 0 2rem black;
 
-    padding: 5%;
+    padding: 5% 5% 10% 5%;
    
-    margin: 15rem 10rem 20rem 2.5rem;
+    margin: 5rem 10rem 20rem 2.5rem;
 }
 
 .container form{
     width: 20vw;
-    height: 20vw;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -213,8 +249,8 @@ tr{
 }
 
 .container button{
-    margin-left: 5rem;
-    padding: 2px;
+    margin-left: 15%;
+    /* padding: 2px; */
 }
 
 option, select, button, input{

@@ -54,14 +54,15 @@
     
         <h1>Order Now</h1>
 
-        <section class="container-cart content-section">
+        <section class="container-cart">
             <h2 class="section-header">CART</h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>
                 <span class="cart-quantity cart-header cart-column">QUANTITY</span>
             </div>
-            <div class="cart-items">
+            <div id="cart-body">
+                
             </div>
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
@@ -83,7 +84,9 @@
                         <tr>
                             Name
                         </tr> 
-                        <span class="error"><p id="name_error"></p></span>
+                        <tr>
+                            <span class="error"><p id="name_error"></p></span>
+                        </tr>
                         <tr>
                             <input type="text" name="name" id="" />
                         </tr>
@@ -91,7 +94,9 @@
                         <tr>
                             Email
                         </tr> 
-                        <span class="error"><p id="email_error"></p></span>
+                        <tr>
+                            <span class="error"><p id="email_error"></p></span>
+                        </tr>
                         <tr>
                             <input type="email" name="email" id="" />
                         </tr>
@@ -99,7 +104,9 @@
                         <tr>
                             Phone
                         </tr> 
-
+                        <tr>
+                            <span class="error"><p id="phone_error"></p></span>
+                        </tr>
                         <tr>
                             <input type="text" name="phone" id="" />
                         </tr>
@@ -108,43 +115,29 @@
                             Address
                         </tr>
                         <tr>
+                            <span class="error"><p id="address_error"></p></span>
+                        </tr>
+                        <tr>
                             <input type="text" name="address" id="" />
-                        </tr>
-
-                        <tr>
-                            Menu
-                        </tr>
-                        <tr>
-                            <select name="menu" id="menuSelect">
-                                <option value="0">-</option>
-                                <option value="1">Chiken Deluxe</option>
-                                <option value="2">The Classic</option>
-                                <option value="3">BIG BEN</option>
-                                <option value="4">Vegan Time</option>
-                                <option value="5">Chicken Tower</option>
-                                <option value="6">Better Big Mac</option>
-                                <option value="7">King of the Sea</option>
-                                <option value="8">McDee Special</option>
-                                <option value="9">Big Black Burger</option>
                         </tr>
 
                         <tr>
                             Serving Type
                         </tr>
                         <tr>
+                            <span class="error"><p id="serve_error"></p></span>
+                        </tr>
+                        <tr>
                             <td>
                                 <select name="servingType" id="typeSelect">
                                     <option value="0">-</option>
-                                    <option value="1">Ala Carte</option>
-                                    <option value="2">Family</option>
-                                    <option value="3">Party</option>
+                                    <option value="1">Eco-Friendly Box</option>
+                                    <option value="2">Paper Bag</option>
+                                    <option value="3">Plastic Box</option>
                                 </select>
                             </td>
                             <td>
-                                <div class="button">
-                                    <button onclick="order()" type="button" id="orderButton">ORDER</button>
-                                </div>
-            
+                                <button class="btn btn-danger" onclick="order()" type="button" id="orderButton">ORDER</button>
                             </td>
                             
                         </tr>
