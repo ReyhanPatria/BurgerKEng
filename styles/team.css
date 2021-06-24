@@ -1,0 +1,113 @@
+
+.team-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-heads{
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90vw;
+}
+
+.member-head img{
+    top: 35%;
+    left: 14%;
+    position: absolute;
+    width: 15%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.member2 img{
+    margin-left: 20vw;
+}
+
+.member3 img{
+    margin-left: 40vw;
+}
+
+.member4 img{
+    margin-left: 60vw;
+}
+
+.member-gif{
+    z-index: 7;
+    visibility: hidden;
+}
+
+.member-head .member-gif{
+    margin-top: 50px;
+    left: 18vw;
+    width: 7%;
+}
+
+.member-top{
+    z-index: 10;
+    margin-top: 1px;
+}
+
+.member-back{
+    z-index: 5;
+    visibility: hidden;
+}
+
+.member-mask{
+    z-index: 20;
+}
+
+.member-face{
+    z-index: 10;
+}
+
+.member-head:hover .member-mask{
+    opacity: 0;
+}
+
+.member-head:hover .member-top{
+    margin-top: -7vw;
+    transition: 0.5s ease-in-out;
+}
+
+.member-head:hover .member-back{
+    visibility: visible;
+}
+
+.member-head:hover .member-gif{
+    visibility: visible;
+    margin-top: 1vw;
+    transition: 1s ease-in-out;
+}
+
+
+.member-title{ 
+    margin-top: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 20vh;
+}
+
+.member-title h4{
+    color: #a7a7a746;
+    font-size: medium;
+}
+
+.member-title h5{
+    color: #a7a7a746;
+    font-size: smaller;
+}
+
+.member-head:hover .member-title h4{
+    color: #F0D7B8;
+    transition: 0.5s ease-in-out;
+}
+
+.member-head:hover .member-title h5{
+    color: #F0D7B8;
+    transition: 0.5s ease-in-out;
+}
