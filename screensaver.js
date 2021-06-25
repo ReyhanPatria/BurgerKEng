@@ -1,61 +1,50 @@
 $(document).ready(function() {
 
     let canvas = document.getElementById("canvas");
+    canvas.width = document.body.scrollWidth;
+    canvas.height = document.body.scrollHeight;
+
     let ctx = canvas.getContext("2d");
 
-    ctx.fillStyle = "red";
-    ctx.strokeStyle = "blue";
+    ctx.fillStyle = "#000000b1";
+    // ctx.strokeStyle = "blue";
 
-    let img = new Image();
-    img.src = "logo.png";
-    img.onload = () => {
-        ctx.drawImage(img,100,150);
-        // setInterval(render,1000/60);
-        // let data = ctx.getImageData();
-    }
+    let img = document.getElementById("ss_logo");
+
     let intervalid;
     let x = 0;
     let y = 0;
-    let boxW = 100;
-    let boxH = 150;
-    console.log("hai " + window.innerWidth+ "   " + window.innerHeight);
-    let canvasWidth = canvas.width;
-    let canvasHeight =  canvas.height;
+    let boxW = 50;
+    let boxH = 70;
     let vx = 1;
     let vy = 1;
 
-    // requestAnimationFrame(render);
-
-    $(window).bind("resize", function(){
-        var w = $(window).width();
-        var h = $(window).height();
-    
-        $("#canvas").css("width", w + "px");
-        $("#canvas").css("height", h + "px"); 
-    });
-
-    $("#canvas")[0].webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT); //Chrome
-    // $("#canvas")[0].mozRequestFullScreen(); //Firefox
-
     function render(){
-        // console.log("BUITCH");
-        ctx.clearRect(0,0,canvasWidth, canvasHeight);
-        ctx.strokeRect(0,0,canvasWidth,canvasHeight);
-        // ctx.fillRect(x,y,boxW,boxH);
-        ctx.drawImage(img,x,y,boxW,boxH);
+        if (document.body.scrollWidth != canvas.width || document.body.scrollHeight != canvas.height) {
+            canvas.width = document.body.scrollWidth;
+            canvas.height = document.body.scrollHeight;
+            x = 0;
+            y = 0;
+            vx = 1;
+            vy = 1;
+            ctx.fillStyle = "#000000b1";
+        }
+        
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
+        ctx.drawImage(img, x , y+window.scrollY, boxW, boxH);
         x+=vx;
         y+=vy;
 
-        console.log("x = " + x);
-        console.log("y = " + y);
-
-        if(x+boxW >= canvasWidth || x <=0){
+        if(x+boxW >= window.innerWidth || x <=0){
+            console.log("x = " + x);
             vx*=-1;
         }
-        if(y+boxH >= canvasHeight || y <=0){
+
+        if(y+boxH >= window.innerHeight || y <=0){
+            console.log("y = " + y);
             vy*=-1;
         }
-
 
     }
     
@@ -64,18 +53,16 @@ $(document).ready(function() {
     var idletime = 5;
     
     function show_screensaver(){
-        // console.log("hai");
-        $('#screensaver').fadeIn();
+        // $('#screensaver').fadeIn();
         $('#canvas').fadeIn( ()=> {
-            console.log("tesksjfoijadf");
-            intervalid = setInterval(render,1000/60);
+            intervalid = setInterval(render, 1000/60);
         }); 
         screensaver_active = true;
         screensaver_animation();
     }
     
     function stop_screensaver(){
-        $('#screensaver').fadeOut();
+        // $('#screensaver').fadeOut();
         $('#canvas').fadeOut( ()=>{
             clearInterval(intervalid);
         }); 
@@ -91,7 +78,7 @@ $(document).ready(function() {
     
         mousetimeout = setTimeout(function(){
             show_screensaver();
-        }, 500 * idletime); // 5 secs			
+        }, 1000 * idletime); // 5 secs			
     });
     
     $(document).mousemove(function(){
@@ -109,8 +96,6 @@ $(document).ready(function() {
     function screensaver_animation(){
         if (screensaver_active) {
             $('#screensaver').animate(screensaver_animation);
-            // setInterval(render,1000/60);
-            // requestAnimationFrame(render);
         }
     }
 
