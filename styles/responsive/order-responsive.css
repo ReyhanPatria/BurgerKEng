@@ -32,10 +32,6 @@
         background-color: rgba(0, 0, 0, 0);
     }
 
-    section {
-        height: 120vw;
-        min-height: 105vh;
-    }
 
     .board-bg img {
         display: none;
@@ -50,30 +46,6 @@
         justify-content: flex-start;
         height: auto;
         margin-top: 5vw;
-    }
-
-    .burger,
-    .information {
-        width: 100vw;
-    }
-
-    .burger {
-        background-image: url("../../sprites/home/cutting-board.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-x: right;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 60vw;
-    }
-
-    .burger img {
-        position: absolute;
-        bottom: 3vw;
-        left: 25%;
-        margin: 0;
-        width: 50%;
     }
 
     .information {
@@ -125,4 +97,43 @@
         margin-right: 0;
         width: 120px;
     }
+    
+    /* main */
+
+    .outer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .image img{
+        margin-top: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    
+    .container-cart {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 5rem 1.5rem;
+    }
+
+    .container{
+        border-radius: 15%;
+        box-shadow: 0 0 2rem black;
+    
+        padding: 10%;
+       
+        margin: 0rem 4rem 5rem 0rem;
+    }
+    
+    .container form{
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    
 }

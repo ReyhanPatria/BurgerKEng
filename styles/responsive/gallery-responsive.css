@@ -1,0 +1,62 @@
+@media all and (max-width: 700px) {
+    body {
+        background-image: url("../../sprites/home/BG3.png");
+    }
+
+    nav {
+        margin: 2rem 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 60vh;
+    }
+
+    .menu-icon span {
+        display: none;
+    }
+
+    .menu-icon ul {
+        text-align: center;
+        position: static;
+        display: block;
+        width: 100%;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .menu-icon:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .burgers {
+        margin-top: 1rem;
+    }
+
+    .burger-container {
+        min-width: 30rem;
+        padding: 12rem 2rem 2rem 2rem;
+        margin-bottom: 6rem;
+        border-radius: 13%;
+    }
+
+    .burger-container img {
+        left: 0;
+        width: 25rem;
+    }
+
+    footer,
+    .footer-left {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .burger-container {
+        min-width: 20rem;
+        padding-top: 6rem;
+    }
+
+    .burger-container img {
+        left: 0;
+        width: 18rem;
+    }
+}
