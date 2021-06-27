@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/makeBurger.css">
     <link rel="stylesheet" href="styles/responsive/makeBurger-responsive.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="script/makeBurger.js"></script>
 </head>
 <body>
     <main>
@@ -85,22 +84,22 @@
                     <div class="ingredient">
                         <h3>Mushroom</h3>
                         <img src="sprites/create_burger/mushroom.png" alt="">
-                        <input type="radio" onclick="changeSauce()" name="sauce" id="sauce-mush">
+                        <input type="radio" onclick="changeSauce(0)" id="sauce-mush">
                     </div>
                     <div class="ingredient">
                         <h3>BBQ</h3>
                         <img src="sprites/create_burger/bbq.png" alt="">
-                        <input type="radio" onclick="changeSauce()" name="sauce" id="sauce-bbq">
+                        <input type="radio" onclick="changeSauce(1)" id="sauce-bbq">
                     </div>
                     <div class="ingredient">
                         <h3>Chilli</h3>
                         <img src="sprites/create_burger/chilli.png" alt="">
-                        <input type="radio" onclick="changeSauce()" name="sauce" id="sauce-chilli">
+                        <input type="radio" onclick="changeSauce(2)" id="sauce-chilli">
                     </div>
                     <div class="ingredient">
                         <h3>Cheese</h3>
                         <img src="sprites/create_burger/cheese.png" alt="">
-                        <input type="radio" onclick="changeSauce()" name="sauce" id="sauce-cheese">
+                        <input type="radio" onclick="changeSauce(3)" id="sauce-cheese">
                     </div>
                 </div>
                 <h2>Vegetables</h2>
@@ -131,12 +130,12 @@
 
                     <img src="sprites/create_burger/beef.png" alt="" class="meat-result hidden" id="beef-img">
                     <img src="sprites/create_burger/chicken.png" alt="" class="meat-result hidden" id="chicken-img">
-                    <img src="sprites/create_burger/fish2.png" alt="" class="meat-result hidden" id="fish-img">
+                    <img src="sprites/create_burger/fish3.png" alt="" class="meat-result hidden" id="fish-img">
 
                     <img src="sprites/create_burger/regBot.png" alt="" class="botBun-result hidden" id="regBot">
                     <img src="sprites/create_burger/wheatBot.png" alt="" class="botBun-result hidden" id="wheatBot">
                 </div>
-                <div class="btn">
+                <div class="btn" onclick="addToCart()">
                     <h1>Add to Cart</h1>
                 </div>
             </div>
@@ -173,4 +172,5 @@
         </div>
     </footer>
 </body>
+<script src="script/makeBurger.js"></script>
 </html>

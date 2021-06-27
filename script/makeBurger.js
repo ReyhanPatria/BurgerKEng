@@ -1,8 +1,8 @@
 let burger = {
-    bun: "reguler",
-    meat: "beef",
+    bun: "",
+    meat: "",
     veggie: "no veggie",
-    sauce: "chilli"
+    sauce: []
 }
 
 /* BUN */
@@ -52,36 +52,61 @@ function changeMeat() {
 /* SAUCE */
 
 let saucesID = ['mush-img', 'bbq-img', 'chilli-img', 'cheese-img'];
+let status = [false, false, false, false]
 
-function changeSauce() {
+function changeSauce(id) {
     saucesID.forEach(sauce => document.getElementById(sauce).classList.add("hidden"));
 
-    if (document.getElementById('sauce-mush').checked === true) {    
-        document.getElementById('mush-img').classList.remove("hidden");
-        burger.sauce = "mushroom";
+    if(status[id] === false) {
+        status[id] = true;
     }
-    else if (document.getElementById('sauce-bbq').checked === true) {    
-        document.getElementById('bbq-img').classList.remove("hidden");
-        burger.sauce = "BBQ";
-    }
-    else if (document.getElementById('sauce-chilli').checked === true) {    
-        document.getElementById('chilli-img').classList.remove("hidden");
-        burger.sauce = "chilli";
-    }
-    else {    
-        document.getElementById('cheese-img').classList.remove("hidden");
-        burger.sauce = "cheese";
+    else {
+        status[id] = false;
+
+        if(id === 0) document.getElementById('sauce-mush').checked = false;
+        else if(id === 1) document.getElementById('sauce-bbq').checked = false;
+        else if(id === 2) document.getElementById('sauce-chilli').checked = false;
+        else document.getElementById('sauce-cheese').checked = false;
     }
 
+    let sauces = [];
+
+    
+    if (document.getElementById('sauce-mush').checked === true) {    
+        document.getElementById('mush-img').classList.remove("hidden");
+        sauces.push("mushroom");
+        // burger.sauce = "mushroom";
+    }
+    if (document.getElementById('sauce-bbq').checked === true) {    
+        document.getElementById('bbq-img').classList.remove("hidden");
+        sauces.push("BBQ");
+        // burger.sauce = "BBQ";
+    }
+    if (document.getElementById('sauce-chilli').checked === true) {    
+        document.getElementById('chilli-img').classList.remove("hidden");
+        sauces.push("chilli");
+        // burger.sauce = "chilli";
+    }
+    if (document.getElementById('sauce-cheese').checked === true) {    
+        document.getElementById('cheese-img').classList.remove("hidden");
+        sauces.push("cheese");
+        // burger.sauce = "cheese";
+    }
+
+    burger.sauce = sauces;
+
+    console.log(status);
     console.log(burger);
 }
 
 /* VEGGIE */
 
+document.getElementById('veggie-no').checked = true
+
 function changeVeggie() {
     if (document.getElementById('veggie-yes').checked === true) {
         document.getElementById('veggie').classList.remove("hidden");
-        burger.veggie = "with veggie";
+        burger.veggie = "w/ veggie";
     }
     else {
         document.getElementById('veggie').classList.add("hidden");
@@ -89,4 +114,31 @@ function changeVeggie() {
     }
 
     console.log(burger);
+}
+
+/* ADD */
+
+function addToCart() {
+    if(burger.bun == "") {
+        alert("Must select bun type!");
+        return;
+    }
+    if(burger.meat == "") {
+        alert("Must select meat type!");
+        return;
+    }
+
+    finalSauces = "no";
+    first = true;
+
+    burger.sauce.forEach(sauce => {
+        if(first) {
+            finalSauces = "";
+            finalSauces += sauce;
+            first = false;
+        }
+        else finalSauces += (", " + sauce);
+    });
+
+    console.log(burger.bun + " bun " + burger.meat + " burger (" + burger.veggie + ") with " + finalSauces + " sauces");
 }
