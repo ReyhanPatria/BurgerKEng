@@ -131,11 +131,11 @@ nav img {
 }
 
 #up {
-    background-image: url("sprites/home/Layer\ 5\ copy.png");
+    background-image: url("../sprites/home/arrow_up.png");
 }
 
 #down {
-    background-image: url("sprites/home/Layer\ 5.png");
+    background-image: url("../sprites/home/arrow_down.png");
 }
 
 .content {
