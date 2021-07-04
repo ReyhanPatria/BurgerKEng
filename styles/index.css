@@ -105,10 +105,6 @@ nav img {
 
 /* body */
 
-section {
-    height: 70vh;
-}
-
 .board-bg {
     position: relative;
 }
@@ -121,29 +117,25 @@ section {
 
 .arrows {
     position: absolute;
-    right: 3vw;
-    top: 38vh;
+    right: 1vw;
+    top: 36vh;
 }
 
 .arrow {
-    width: 30px;
-    height: 50px;
+    width: 100px;
+    height: 60px;
     margin: 10px 0;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.arrow:hover {
-    cursor: pointer;
-}
-
 #up {
-    background-image: url("../sprites/home/Layer\ 5\ copy.png");
+    background-image: url("sprites/home/Layer\ 5\ copy.png");
 }
 
 #down {
-    background-image: url("../sprites/home/Layer\ 5.png");
+    background-image: url("sprites/home/Layer\ 5.png");
 }
 
 .content {
