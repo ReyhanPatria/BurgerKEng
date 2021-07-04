@@ -32,7 +32,7 @@
         background-color: rgba(0, 0, 0, 0);
     }
 
-    section {
+    .homeHeight {
         height: 120vw;
         min-height: 105vh;
     }
@@ -43,6 +43,10 @@
 
     .arrows {
         display: none;
+    }
+
+    .arrow2 {
+        display: block;
     }
 
     .content {
