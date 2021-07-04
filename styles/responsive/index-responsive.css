@@ -6,8 +6,7 @@
 
     header {
         height: 60vh;
-        width: 100vw;
-        padding-top: 20px;
+        padding: 20px;
     }
 
     nav {
@@ -49,12 +48,15 @@
         flex-direction: column;
         justify-content: flex-start;
         height: auto;
+        width: 95vw;
         margin-top: 5vw;
     }
 
     .burger,
     .information {
-        width: 100vw;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
     }
 
     .burger {
