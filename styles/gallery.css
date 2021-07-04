@@ -90,6 +90,7 @@ main {
     text-align: center;
     position: relative;
     padding-top: 12em;
+    padding-bottom: 2rem;
     margin: 5rem 2.5rem 2.5rem 2.5rem;
 }
 
@@ -109,6 +110,40 @@ main {
 .orange {
     color: #FFA800;
 }
+
+/* add-on */
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB=;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #FFA800;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
 
 
 /* Footer */

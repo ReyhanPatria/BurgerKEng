@@ -1,0 +1,139 @@
+@media (max-width: 700px) {
+
+    main {
+        background-image: url("../../sprites/home/BG3.png");
+    }
+
+    header {
+        height: 60vh;
+        width: 100vw;
+        padding-top: 20px;
+    }
+
+    nav {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 60vh;
+    }
+
+    .menu-icon span {
+        display: none;
+    }
+
+    .menu-icon ul {
+        text-align: center;
+        position: static;
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .menu-icon:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+
+    .board-bg img {
+        display: none;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        margin-top: 5vw;
+    }
+
+    .information {
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        margin-left: 0;
+        padding: 50px 0 30px 0;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    .title h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .second {
+        margin-left: 0;
+    }
+
+    .description {
+        margin: 5px 0 40px 0;
+    }
+
+    .price {
+        width: auto;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 40vh;
+        padding: 20px 0;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+    }
+
+    .motto {
+        white-space: normal;
+        margin: 5px 0;
+    }
+
+    .social-media {
+        margin-right: 0;
+        width: 120px;
+    }
+    
+    /* main */
+
+    .outer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .image img{
+        margin-top: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    
+    .container-cart {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 5rem 1.5rem;
+    }
+
+    .container{
+        border-radius: 15%;
+        box-shadow: 0 0 2rem black;
+    
+        padding: 10%;
+       
+        margin: 0rem 4rem 5rem 0rem;
+    }
+    
+    .container form{
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    
+}

@@ -1,134 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Now</title>
-    <link rel="stylesheet" href="order.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/order.css">
+    <link rel="stylesheet" href="styles/responsive/order-responsive.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="menu-icon">
-                <span class="fa fa-bars fa-2x"></span>
-                <ul>
-                    <li>
-                        <a href="">HOME</a>
-                    </li>
-                    <li>
-                        <a href="">GALLERY</a>
-                    </li>
-                    <li>
-                        <a href="">ORDER</a>
-                    </li>
-                    <li>
-                        <a href="">CREATE</a>
-                    </li>
-                    <li>
-                        <a href="">TEAM</a>
-                    </li>
-                </ul>
-            </div>
-            <img src="sprites/home/Footer Logo.png" alt="">
-        </nav>
-    </header>
 
     <main>
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <span class="fa fa-bars fa-2x"></span>
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">GALLERY</a>
+                        </li>
+                        <li>
+                            <a href="order.html">ORDER</a>
+                        </li>
+                        <li>
+                            <a href="">CREATE</a>
+                        </li>
+                        <li>
+                            <a href="team.html">TEAM</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-logo-title">
+                    <div>
+                        <img src="sprites/home/Footer Logo.png" alt="">
+                    </div>
+                    <div class="nav-title">
+                        <h2>BURGER</h2>
+                        <h2><span class="yellow">KE</span>NG</h2>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
         <h1>Order Now</h1>
-       
+
+        <section class="container-cart">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div id="cart-body">
+
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+        </section>
+
 
         <div class="outer">
 
             <div class="image">
                 <img src="hand.png" alt="">
             </div>
-            
+
             <div class="container">
 
-                <form action="">
-                    <table>
+                <form name="submit_form" action="">
+                    <table cellspacing=0>
                         <tr>
                             Name
-                        </tr> 
-                        <tr>
-                            <input type="text" name="" id="" />
                         </tr>
-                        
+                        <tr>
+                            <span class="error">
+                                <p id="name_error"></p>
+                            </span>
+                        </tr>
+                        <tr>
+                            <input type="text" name="name" id="" />
+                        </tr>
+
                         <tr>
                             Email
-                        </tr> 
+                        </tr>
                         <tr>
-                            <input type="email" name="" id="" />
+                            <span class="error">
+                                <p id="email_error"></p>
+                            </span>
+                        </tr>
+                        <tr>
+                            <input type="email" name="email" id="" />
                         </tr>
 
                         <tr>
                             Phone
-                        </tr> 
-
+                        </tr>
                         <tr>
-                            <input type="text" name="" id="" />
+                            <span class="error">
+                                <p id="phone_error"></p>
+                            </span>
+                        </tr>
+                        <tr>
+                            <input type="text" name="phone" id="" />
                         </tr>
 
                         <tr>
                             Address
                         </tr>
                         <tr>
-                            <input type="text" name="" id="" />
-                        </tr>
-
-                        <tr>
-                            Menu
+                            <span class="error">
+                                <p id="address_error"></p>
+                            </span>
                         </tr>
                         <tr>
-                            <select name="Menu">
-                                <option value="0">-</option>
-                                <option value="1">Chiken Deluxe</option>
-                                <option value="2">The Classic</option>
-                                <option value="3">BIG BEN</option>
-                                <option value="4">Vegan Time</option>
-                                <option value="5">Chicken Tower</option>
-                                <option value="6">Better Big Mac</option>
-                                <option value="7">King of the Sea</option>
-                                <option value="8">McDee Special</option>
-                                <option value="9">Big Black Burger</option>
+                            <input type="text" name="address" id="" />
                         </tr>
 
                         <tr>
                             Serving Type
                         </tr>
                         <tr>
-                            <select name="servingType">
-                                <option value="0">-</option>
-                                <option value="1">Ala Carte</option>
-                                <option value="2">Family</option>
-                                <option value="3">Party</option>
-                            </select>
+                            <span class="error">
+                                <p id="serve_error"></p>
+                            </span>
                         </tr>
+                        <tr>
+                            <td>
+                                <select name="servingType" id="typeSelect">
+                                    <option value="0">-</option>
+                                    <option value="1">Eco-Friendly Box</option>
+                                    <option value="2">Paper Bag</option>
+                                    <option value="3">Plastic Box</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger" onclick="order()" type="button"
+                                    id="orderButton">ORDER</button>
+                            </td>
+
+                        </tr>
+
+
                     </table>
+
+
                 </form>
 
-                   <div class="button">
-                       <button type="submit" class="OrderButton">ORDER</button>
-                   </div>
-                   
-                   
-                 </div>
-        </div>
-        
-    </main>
-    
-    <footer>
-        <div class="footer-left">
-            <div class="logo">
-                <img src="sprites/home/Footer Logo.png" alt="">
-            </div>
-            <div class="motto">
-                <h3>"The best burger since 1953"</h3>
             </div>
         </div>
 
-        <div class="footer-middle">
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="sprites/home/Footer Logo.png" alt="">
+            <div class="motto">"the best burger
+                since 1993"
+            </div>
+        </div>
+        <div class="social-media">
             <a href="https://twitter.com">
                 <img src="sprites/home/twitter_logo.png" alt="">
             </a>
@@ -139,18 +184,20 @@
                 <img src="sprites/home/instagram_logo.png" alt="">
             </a>
         </div>
-
-        <div class="footer-right">
-            <div>
+        <div class="footer-info">
+            <div class="location">
                 <img src="sprites/home/geo_logo.png" alt="">
-                <h4>69 Baker Street</h4>
+                <h2>69 Baker Street</h2>
             </div>
             <div>
                 <img src="sprites/home/phone_logo.png" alt="">
-                <h4>(031) 6969 6969</h4>
+                <h2><span>(031)</span> 6969 6969</h2>
             </div>
         </div>
-    </footer>    
-    
+    </footer>
+
 </body>
+
+<script src="order.js"></script>
+
 </html>
