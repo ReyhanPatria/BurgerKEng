@@ -45,7 +45,8 @@
         display: none;
     }
 
-    .arrow2 {
+    .arrow-left,
+    .arrow-right {
         display: block;
     }
 

@@ -141,7 +141,8 @@ nav img {
     cursor: pointer;
 }
 
-.arrow2 {
+.arrow-right,
+.arrow-left {
     display: none;
     width: 100px;
     height: 60px;
@@ -151,7 +152,8 @@ nav img {
     background-repeat: no-repeat;
 }
 
-.arrow2:hover {
+.arrow-left:hover,
+.arrow-right:hover {
     cursor: pointer;
 }
 
@@ -171,19 +173,19 @@ nav img {
     background-image: url("../sprites/home/arrow_down2.png");
 }
 
-#left {
+.arrow-left {
     background-image: url("../sprites/home/arrow_left1.png");
 }
 
-#left:active {
+.arrow-left:active {
     background-image: url("../sprites/home/arrow_left2.png");
 }
 
-#right {
+.arrow-right {
     background-image: url("../sprites/home/arrow_right1.png");
 }
 
-#right:active {
+.arrow-right:active {
     background-image: url("../sprites/home/arrow_right2.png");
 }
 

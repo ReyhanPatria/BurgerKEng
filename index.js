@@ -14,7 +14,7 @@ promotionalImages.hide();
 let currentImage = promotionalImages.first();
 currentImage.show();
 
-$("#up").click(function () {
+function nextSlide() {
     currentInformation.hide();
     currentImage.hide();
 
@@ -28,9 +28,9 @@ $("#up").click(function () {
 
     currentInformation.show();
     currentImage.show();
-});
+}
 
-$("#down").click(function () {
+function prevSlide() {
     currentInformation.hide();
     currentImage.hide();
 
@@ -44,7 +44,13 @@ $("#down").click(function () {
 
     currentInformation.show();
     currentImage.show();
-});
+}
+
+$("#up").click(prevSlide);
+$(".arrow-left").click(prevSlide);
+
+$("#down").click(nextSlide);
+$(".arrow-right").click(nextSlide);
 
 $(".btn").click(function () {
     window.location.href = "gallery.html"
