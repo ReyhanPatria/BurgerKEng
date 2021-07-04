@@ -121,6 +121,13 @@ nav img {
     top: 36vh;
 }
 
+.mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
 .arrow {
     width: 100px;
     height: 60px;
@@ -130,12 +137,56 @@ nav img {
     background-repeat: no-repeat;
 }
 
+.arrow:hover {
+    cursor: pointer;
+}
+
+.arrow-right,
+.arrow-left {
+    display: none;
+    width: 100px;
+    height: 60px;
+    margin: 10px 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    cursor: pointer;
+}
+
 #up {
-    background-image: url("sprites/home/Layer\ 5\ copy.png");
+    background-image: url("../sprites/home/arrow_up1.png");
+}
+
+#up:active {
+    background-image: url("../sprites/home/arrow_up2.png");
 }
 
 #down {
-    background-image: url("sprites/home/Layer\ 5.png");
+    background-image: url("../sprites/home/arrow_down1.png");
+}
+
+#down:active {
+    background-image: url("../sprites/home/arrow_down2.png");
+}
+
+.arrow-left {
+    background-image: url("../sprites/home/arrow_left1.png");
+}
+
+.arrow-left:active {
+    background-image: url("../sprites/home/arrow_left2.png");
+}
+
+.arrow-right {
+    background-image: url("../sprites/home/arrow_right1.png");
+}
+
+.arrow-right:active {
+    background-image: url("../sprites/home/arrow_right2.png");
 }
 
 .content {
