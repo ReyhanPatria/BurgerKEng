@@ -5,6 +5,20 @@ let burger = {
     sauce: []
 }
 
+const CART_STORAGE = "CART_STORAGE";
+let cart = []
+
+window.onload = function(){
+    document.getElementById('veggie-no').checked = true
+    initCart()
+}
+
+function initCart(){
+    if(localStorage.getItem(CART_STORAGE)){
+        cart = JSON.parse(localStorage.getItem(CART_STORAGE));
+    }
+}
+
 /* BUN */
 
 function changeBun() {
@@ -57,6 +71,8 @@ let status = [false, false, false, false]
 function changeSauce(id) {
     saucesID.forEach(sauce => document.getElementById(sauce).classList.add("hidden"));
 
+    let count = 0;
+
     if(status[id] === false) {
         status[id] = true;
     }
@@ -70,27 +86,31 @@ function changeSauce(id) {
     }
 
     let sauces = [];
-
     
     if (document.getElementById('sauce-mush').checked === true) {    
         document.getElementById('mush-img').classList.remove("hidden");
         sauces.push("mushroom");
-        // burger.sauce = "mushroom";
+        count++;
     }
     if (document.getElementById('sauce-bbq').checked === true) {    
         document.getElementById('bbq-img').classList.remove("hidden");
         sauces.push("BBQ");
-        // burger.sauce = "BBQ";
+        count++;
     }
     if (document.getElementById('sauce-chilli').checked === true) {    
         document.getElementById('chilli-img').classList.remove("hidden");
         sauces.push("chilli");
-        // burger.sauce = "chilli";
+        count++;
     }
     if (document.getElementById('sauce-cheese').checked === true) {    
         document.getElementById('cheese-img').classList.remove("hidden");
         sauces.push("cheese");
-        // burger.sauce = "cheese";
+        count++;
+    }
+
+    if(count > 1) {
+        saucesID.forEach(sauce => document.getElementById(sauce).classList.add("hidden"));
+        document.getElementById('custom-img').classList.remove("hidden");
     }
 
     burger.sauce = sauces;
@@ -100,8 +120,6 @@ function changeSauce(id) {
 }
 
 /* VEGGIE */
-
-document.getElementById('veggie-no').checked = true
 
 function changeVeggie() {
     if (document.getElementById('veggie-yes').checked === true) {
@@ -140,5 +158,23 @@ function addToCart() {
         else finalSauces += (", " + sauce);
     });
 
-    console.log(burger.bun + " bun " + burger.meat + " burger (" + burger.veggie + ") with " + finalSauces + " sauces");
+    finalName = burger.bun + " bun " + burger.meat + " burger (" + burger.veggie + ") with " + finalSauces + " sauces";
+
+    var item = {name:finalName, price:"IDR 55K", imageSrc:"../sprites/create_burger/customBurger.png"}
+
+    const checkCart = cart.find(key => {
+        return item.name == key.name
+    })
+
+    if(checkCart == undefined){
+        item["jumlah"] = 1        
+        cart.push(item)
+        alert("Added to cart!")
+    }
+    else{
+        checkCart.jumlah++;
+        alert("You have "+ checkCart.jumlah + " items in the cart!")
+    }
+    localStorage.setItem(CART_STORAGE, JSON.stringify(cart))
+    location.reload()
 }
