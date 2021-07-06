@@ -1,10 +1,20 @@
-@media all and (max-width: 700px) {
-    body {
+@media (max-width: 700px) {
+    
+    main {
         background-image: url("../../sprites/home/BG3.png");
     }
 
+    main>h1 {
+        margin-top: 5rem;
+        margin-bottom: 0;
+    }
+
+    header {
+        height: 60vh;
+        padding: 20px 0;
+    }
+
     nav {
-        margin: 2rem 0;
         flex-direction: column-reverse;
         align-items: center;
         height: 60vh;
@@ -15,11 +25,12 @@
     }
 
     .menu-icon ul {
+        margin: 0;
+        padding: 0;
         text-align: center;
         position: static;
         display: block;
         width: 100%;
-        padding: 2rem;
         background-color: rgba(0, 0, 0, 0);
     }
 
@@ -28,7 +39,7 @@
     }
 
     .burgers {
-        margin-top: 1rem;
+        margin-top: -0.5rem;
     }
 
     .burger-container {
@@ -43,13 +54,32 @@
         width: 25rem;
     }
 
-    footer,
-    .footer-left {
+    footer {
         flex-direction: column;
+        height: 40vh;
+        padding: 20px 0;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+    }
+
+    .motto {
+        white-space: normal;
+        margin: 5px 0;
+    }
+
+    .social-media {
+        margin-right: 0;
+        width: 120px;
     }
 }
 
-@media all and (max-width: 480px) {
+@media (max-width: 480px) {
+
+    .burgers {
+        margin-top: 1rem;
+    }
     .burger-container {
         min-width: 20rem;
         padding-top: 6rem;
