@@ -7,7 +7,6 @@ $(document).ready(function() {
     let ctx = canvas.getContext("2d");
 
     ctx.fillStyle = "#000000b1";
-    // ctx.strokeStyle = "blue";
 
     let img = document.getElementById("ss_logo");
 

@@ -5,45 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gallery</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="styles/gallery.css">
     <link rel="stylesheet" href="styles/responsive/gallery-responsive.css">
+    <link rel="stylesheet" href="styles/headerFooter.css">
+    <link rel="stylesheet" href="styles/screensaver.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="menu-icon">
-                <span class="fa fa-bars fa-2x"></span>
-                <ul>
-                    <li>
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">GALLERY</a>
-                    </li>
-                    <li>
-                        <a href="order.html">ORDER</a>
-                    </li>
-                    <li>
-                        <a href="">CREATE</a>
-                    </li>
-                    <li>
-                        <a href="team.html">TEAM</a>
-                    </li>
-                </ul>
-            </div>
-            <img src="sprites/home/Footer Logo.png" alt="">
-        </nav>
-    </header>
-
+    <img id="ss_logo" src="logo.png" height="70" width="50" alt="" style="display: none;">
+    <canvas id="canvas"></canvas>
     <main>
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <span class="fa fa-bars fa-2x"></span>
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">GALLERY</a>
+                        </li>
+                        <li>
+                            <a href="order.html">ORDER</a>
+                        </li>
+                        <li>
+                            <a href="makeBurger.html">CREATE</a>
+                        </li>
+                        <li>
+                            <a href="team.html">TEAM</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-logo-title">
+                    <div>
+                        <img src="sprites/home/Footer Logo.png" alt="">
+                    </div>
+                    <div class="nav-title">
+                        <h2>BURGER</h2>
+                        <h2><span class="yellow">KE</span>NG</h2>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
         <h1>OUR MENU</h1>
 
         <div class="burgers">
@@ -122,16 +132,13 @@
     </main>
 
     <footer>
-        <div class="footer-left">
-            <div class="logo">
-                <img src="sprites/home/Footer Logo.png" alt="">
-            </div>
-            <div class="motto">
-                <h3>"The best burger since 1953"</h3>
+        <div class="footer-logo">
+            <img src="sprites/home/Footer Logo.png" alt="">
+            <div class="motto">"the best burger
+                since 1993"
             </div>
         </div>
-
-        <div class="footer-middle">
+        <div class="social-media">
             <a href="https://twitter.com">
                 <img src="sprites/home/twitter_logo.png" alt="">
             </a>
@@ -142,21 +149,19 @@
                 <img src="sprites/home/instagram_logo.png" alt="">
             </a>
         </div>
-
-        <div class="footer-right">
-            <div>
+        <div class="footer-info">
+            <div class="location">
                 <img src="sprites/home/geo_logo.png" alt="">
-                <h4>69 Baker Street</h4>
+                <h2>69 Baker Street</h2>
             </div>
             <div>
                 <img src="sprites/home/phone_logo.png" alt="">
-                <h4>(031) 6969 6969</h4>
+                <h2><span>(031)</span> 6969 6969</h2>
             </div>
         </div>
     </footer>
 </body>
-
-
-<script src="gallery.js"></script>
-
+<script src="script/jquery-3.5.1.min.js"></script>
+<script src="script/gallery.js"></script>
+<script src="script/screensaver.js"></script>
 </html>

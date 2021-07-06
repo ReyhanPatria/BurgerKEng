@@ -11,7 +11,7 @@ window.onload = function(){
 }
 
 function init(){
-
+    
     if(localStorage.getItem(CART_STORAGE)){
         cart = JSON.parse(localStorage.getItem(CART_STORAGE));
     }

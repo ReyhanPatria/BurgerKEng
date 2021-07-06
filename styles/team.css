@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #F0D7B8;
+}
+
+.yellow {
+    color: #FFA800;
+}
 
 .team-content{
     display: flex;

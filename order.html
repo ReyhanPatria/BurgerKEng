@@ -8,16 +8,17 @@
     <title>Document</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="styles/order.css">
+    <link rel="stylesheet" href="styles/headerFooter.css">
     <link rel="stylesheet" href="styles/responsive/order-responsive.css">
+    <link rel="stylesheet" href="styles/screensaver.css">
 </head>
 
 <body>
-
+    <img id="ss_logo" src="logo.png" height="70" width="50" alt="" style="display: none;">
+    <canvas id="canvas"></canvas>
     <main>
         <header>
             <nav>
@@ -34,7 +35,7 @@
                             <a href="order.html">ORDER</a>
                         </li>
                         <li>
-                            <a href="">CREATE</a>
+                            <a href="makeBurger.html">CREATE</a>
                         </li>
                         <li>
                             <a href="team.html">TEAM</a>
@@ -52,7 +53,6 @@
                 </div>
             </nav>
         </header>
-
 
         <h1>Order Now</h1>
 
@@ -76,7 +76,7 @@
         <div class="outer">
 
             <div class="image">
-                <img src="hand.png" alt="">
+                <img src="../sprites/order/hand.png" alt="">
             </div>
 
             <div class="container">
@@ -195,9 +195,8 @@
             </div>
         </div>
     </footer>
-
 </body>
-
-<script src="order.js"></script>
-
+<script src="script/jquery-3.5.1.min.js"></script>
+<script src="script/order.js"></script>
+<script src="script/screensaver.js"></script>
 </html>
