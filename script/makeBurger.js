@@ -160,7 +160,7 @@ function addToCart() {
 
     finalName = burger.bun + " bun " + burger.meat + " burger (" + burger.veggie + ") with " + finalSauces + " sauces";
 
-    var item = {name:finalName, price:"IDR 55K", imageSrc:"../sprites/create_burger/customBurger.png"}
+    var item = {name:finalName, price:"IDR 55K", imageSrc:"./sprites/create_burger/customBurger.png"}
 
     const checkCart = cart.find(key => {
         return item.name == key.name
