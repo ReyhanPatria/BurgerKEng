@@ -78,7 +78,7 @@ section h3 {
 }
 
 .result {
-    background-image: url("../../sprites/home/cutting-board.png");
+    background-image: url("../sprites/home/cutting-board.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
